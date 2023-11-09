@@ -1,0 +1,7 @@
+*.pyc
+__pycache__/
+/new_car.csv
+/new_car_2.csv
+/new_car_3.csv
+
+

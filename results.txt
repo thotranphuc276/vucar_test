@@ -1,0 +1,100 @@
+Model Training and Evaluation Results
+
+
+Dataset: new_car.csv
+
+
+Model: Linear Regression
+Training time: 0.037109375 seconds for 252411 samples
+Inference time for a sample: 4.6574423158724005e-08 seconds
+		Error Table Linear Regression
+Mean Absolute Error      : 295.37800589177516
+Mean Squared  Error      : 443413.024672021
+Root Mean Squared  Error : 665.8926525139176
+R Squared Error          : 0.13176745509102172
+
+
+Model: Random Forest
+Training time: 5.891488552093506 seconds for 252411 samples
+Inference time for a sample: 3.3368286466023462e-06 seconds
+		Error Table Random Forest
+Mean Absolute Error      : 29.011968195289583
+Mean Squared  Error      : 12954.814817763685
+Root Mean Squared  Error : 113.81921989613039
+R Squared Error          : 0.9746336007013525
+
+
+Model: XGBoost
+Training time: 0.13111495971679688 seconds for 252411 samples
+Inference time for a sample: 6.51407179102426e-08 seconds
+		Error Table XGBoost
+Mean Absolute Error      : 145.5331999124187
+Mean Squared  Error      : 136073.20707879085
+Root Mean Squared  Error : 368.8810202203291
+R Squared Error          : 0.7335595025352901
+
+
+Dataset: new_car_2.csv
+
+
+Model: Linear Regression
+Training time: 0.035246849060058594 seconds for 214024 samples
+Inference time for a sample: 1.9401614314463966e-07 seconds
+		Error Table Linear Regression
+Mean Absolute Error      : 282.33042142397943
+Mean Squared  Error      : 403768.2465513766
+Root Mean Squared  Error : 635.427609213966
+R Squared Error          : 0.14152939132832487
+
+
+Model: Random Forest
+Training time: 6.248833656311035 seconds for 214024 samples
+Inference time for a sample: 3.573569536391796e-06 seconds
+		Error Table Random Forest
+Mean Absolute Error      : 20.31084337254746
+Mean Squared  Error      : 15637.740307939204
+Root Mean Squared  Error : 125.05095084780125
+R Squared Error          : 0.9667518668070942
+
+
+Model: XGBoost
+Training time: 0.13010811805725098 seconds for 214024 samples
+Inference time for a sample: 6.762181315426603e-08 seconds
+		Error Table XGBoost
+Mean Absolute Error      : 142.83671287545477
+Mean Squared  Error      : 116497.05140949623
+Root Mean Squared  Error : 341.3166439092829
+R Squared Error          : 0.7523101544359799
+
+
+Dataset: new_car_3.csv
+
+
+Model: Linear Regression
+Training time: 0.03400611877441406 seconds for 170740 samples
+Inference time for a sample: 5.3753933497480146e-08 seconds
+		Error Table Linear Regression
+Mean Absolute Error      : 299.69466544134707
+Mean Squared  Error      : 441054.873338476
+Root Mean Squared  Error : 664.1196227627038
+R Squared Error          : 0.14142060312371307
+
+
+Model: Random Forest
+Training time: 5.580029249191284 seconds for 170740 samples
+Inference time for a sample: 3.653625368887642e-06 seconds
+		Error Table Random Forest
+Mean Absolute Error      : 20.144869081980694
+Mean Squared  Error      : 6467.7883670234
+Root Mean Squared  Error : 80.42256130603775
+R Squared Error          : 0.9874094808356855
+
+
+Model: XGBoost
+Training time: 0.23560690879821777 seconds for 170740 samples
+Inference time for a sample: 2.420993607074269e-07 seconds
+		Error Table XGBoost
+Mean Absolute Error      : 146.35125903702064
+Mean Squared  Error      : 150245.13600256562
+Root Mean Squared  Error : 387.61467464811705
+R Squared Error          : 0.7075253306323115

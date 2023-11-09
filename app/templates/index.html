@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Car Price Prediction</h1>
+    <form method="post" action="/predict">
+        {% for feature, values in unique_values.items() %}
+            {% if values|length > 70 %}
+                <label for="{{ feature }}">{{ feature.capitalize() }}:</label>
+                <input type="text" name="{{ feature }}" required><br>
+            {% else %}
+                <label for="{{ feature }}">{{ feature.capitalize() }}:</label>
+                {% if feature != 'origin' %}
+                    <select name="{{ feature }}" required>
+                        <option value="">None</option>  <!-- Default choice is None -->
+                        {% for option in values %}
+                            <option value="{{ option }}">{{ option }}</option>
+                        {% endfor %}
+                    </select><br>
+                {% else %}
+                    <select name="{{ feature }}">
+                        <option value="">None</option>  <!-- Default choice is None -->
+                        {% for option in values %}
+                            <option value="{{ option }}">{{ option }}</option>
+                        {% endfor %}
+                    </select><br>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+
+        <!-- Other fields... -->
+
+        <input type="submit" value="Predict">
+    </form>
+    {% if prediction %}
+        <p>{{ prediction }}</p>
+    {% endif %}
+    {% if error %}
+        <p style="color: rgb(255, 0, 0);">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
